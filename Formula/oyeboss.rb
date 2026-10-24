@@ -1,8 +1,8 @@
 class Oyeboss < Formula
   desc "Just-in-time startup incubator that mentors founders from idea to venture"
   homepage "https://oyeboss.build"
-  url "https://registry.npmjs.org/oyeboss/-/oyeboss-0.336.0.tgz"
-  sha256 "9bf6060fe43dfe9f8970cce784cd2fcfe41bb4c4cce36c9dd3db1f4ea739838e"
+  url "https://registry.npmjs.org/oyeboss/-/oyeboss-0.337.0.tgz"
+  sha256 "c76b2014dd3609a53c64f55b043c17bc1a41a66a60c88c58771bab780abac22d"
   license "MIT"
 
   depends_on "node"
@@ -13,6 +13,6 @@ class Oyeboss < Formula
   end
 
   test do
-    assert_match "0.336.0", shell_output("#{bin}/boss --version")
+    assert_match "0.337.0", shell_output("#{bin}/boss --version")
   end
 end
